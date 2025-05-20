@@ -23,3 +23,11 @@ fi
 ### Exec command as root with sudo
 # For exec command chain as root with sudo you can use: 
 sudo bash -c 'cat /dev/null > /var/spool/mail/root'
+
+### Generate string with random symbols
+# With english alphabet with lower and upper case + digits with 12 symbols lengh:
+cat /dev/urandom | tr -dc A-Z-a-z-0-9 | head -c12 && echo ''
+# You can change lengh by changing head arg -cX, where X is lengh
+
+# Also you can use convenient app:
+pwgen
