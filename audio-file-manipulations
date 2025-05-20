@@ -1,0 +1,6 @@
+# Check audio duration
+soxi -D foo.wav
+ffmpeg -i foo.mp3 2>&1 | grep Duration
+
+# Convert WAV to MP3
+lame -b 16 -m m --silent foo.wav foo.mp3
