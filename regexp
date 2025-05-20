@@ -1,0 +1,2 @@
+# Delete line duplicates in sorted by alphabet (or reverse) list:
+s/^(.*)(\r?\n\1)+$/\1/
