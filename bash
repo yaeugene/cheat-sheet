@@ -19,3 +19,7 @@ fi
 
 # After this changes you can simply press up/down and select needed command or
 # you can enter firs symbols of command in history and after that when press up/down you can select only from commands with same beginning
+
+### Exec command as root with sudo
+# For exec command chain as root with sudo you can use: 
+sudo bash -c 'cat /dev/null > /var/spool/mail/root'
